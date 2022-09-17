@@ -1,12 +1,23 @@
 import React,{useEffect} from 'react';
-import { useSelector, useDispatch } from 'react-redux/es/exports';
-import { getWheater } from '../service/FetchService';
+import { useDispatch,useSelector } from 'react-redux';
+
+import { getWheater } from '../service/AxiosService';
 
 
 const WheaterMain = () => {
 
 
-    return (
+const {list : wheaters } = useSelector((state) => state.wheater)
+
+const dispatch = useDispatch();
+
+useEffect(() => {
+
+   dispatch(getWheater());
+   
+}, [dispatch]);
+
+ return (
         <div>
 
 
