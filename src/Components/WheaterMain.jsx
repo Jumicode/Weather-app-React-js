@@ -1,27 +1,20 @@
 import React,{useEffect} from 'react';
 import { useDispatch,useSelector } from 'react-redux';
 
-import { getWheater } from '../service/AxiosService';
 
-
+//Componente principal de la APP 
 const WheaterMain = () => {
 
 
 const {list : wheaters } = useSelector((state) => state.wheater)
 
-const dispatch = useDispatch();
-
-useEffect(() => {
-
-   dispatch(getWheater());
-   
-}, [dispatch]);
 
  return (
         <div>
+<h1>{wheaters.name}</h1>
+{wheaters.timezone}
+<h2>{wheaters.base}</h2>
 
-
-            
         </div>
     );
 }

@@ -1,21 +1,22 @@
 import {createSlice} from '@reduxjs/toolkit'
 
+
+
 export const wheaterSlice = createSlice({
     name:'wheater',
     initialState:{
-        list:[],
+        list:[],    
     },
     reducers:{
-
+//Funciones actualizadoras del estado
 setWheater:(state,actions) => {
-state.list = actions.payload
-}
-
+state.list = actions.payload;
+},
   }
 })
 
 export  const {setWheater} = wheaterSlice.actions;
 
-export default wheaterSlice.reducer;
+export default wheaterSlice.reducer
 
 
