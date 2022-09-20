@@ -13,7 +13,9 @@ const {list : wheaters } = useSelector((state) => state.wheater)
         <div>
 <h1>{wheaters.name}</h1>
 {wheaters.timezone}
+<h3>{wheaters.main.humidity}</h3>
 <h2>{wheaters.base}</h2>
+{wheaters.wind.speed}
 
         </div>
     );
