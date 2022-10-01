@@ -1,6 +1,6 @@
 import  React from "react";
-import WheaterMain from "./Components/WheaterMain";
-import WheaterSearch from "./Components/WheaterSearch";
+import WeatherMain from "./Components/WeatherMain";
+import WeatherSearch from "./Components/WeatherSearch";
 
 
 
@@ -10,11 +10,10 @@ function App() {
   return (
     <div >
 
-<WheaterMain></WheaterMain>
+<WeatherMain></WeatherMain>
+
 
   
-<WheaterSearch></WheaterSearch>
-
 
     </div>
   );

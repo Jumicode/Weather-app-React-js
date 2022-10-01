@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import styles from '../Styles/WheaterForm.scss'
+import styles from '../Styles/WeatherForm.scss'
 
 
-const WheaterForm = ({getWheater}) => {
+const WeatherForm = ({getWeather}) => {
 
   
 const [IsOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ const toggle = () => setIsOpen(!IsOpen);
 
     return (
 
-      <div className='Container'>
+      <div className='ContainerForm'>
 
       <div style={{width: IsOpen ? "300px" : "50px"}} className='SideBard' >
       
@@ -19,7 +19,7 @@ const toggle = () => setIsOpen(!IsOpen);
       
       
   
-   <form  onSubmit={getWheater} >
+   <form  onSubmit={getWeather} >
       <input  style={{width: IsOpen ? "200px"  : '0px',display: IsOpen ? 'block':'none'}} type='text' name='name' placeholder='city name'   ></input> 
       <input  style={{display: IsOpen ? 'block' :'none'}}  type='submit' value='Search'></input>
     </form>
@@ -29,4 +29,4 @@ const toggle = () => setIsOpen(!IsOpen);
     );
 }
 
-export default WheaterForm;
+export default WeatherForm;

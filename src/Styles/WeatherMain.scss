@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+
+.Container{
+    display: flex;
+    background: rgb(26, 29, 39);
+    max-width: 100%;
+ max-height: 100%;
+    
+   
+.MainCard{
+
+width: 25%;
+background-color: rgb(37, 42, 59);
+//background-image: url('../images/weather-images/Cloud-background.png');
+background-position-x: right;
+background-repeat: repeat-x;
+//opacity: 0.1;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+h1{
+    margin-top: 60%;
+    padding: 15px;
+    color: #fff;
+ 
+    font-size: 45px;
+}
+h2{
+   margin-top: 10px;
+   padding: 10px;
+   color: gray;
+}
+
+p{
+    padding-top: 15px;
+    font-size: 15px;
+    color: rgb(126, 121, 121);
+    
+}
+
+h5{
+    color: gray;
+    margin-top: 30px;
+}
+
+img{
+    margin-top: 40%;
+    height: 100px;
+ width: 100px;
+
+}
+
+
+
+}
+
+
+
+}
