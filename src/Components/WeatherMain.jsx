@@ -36,9 +36,39 @@ const {country,weather,list,WeatherTemp } = useSelector((state) => state.weather
 <h5><i className='bi bi-geo-alt'></i>{weather.name} {country.country}</h5>
 
 
+
+
+</section>
+
+<section className='CardHumidity'>
+<p>Humidity</p>
+<h1>{WeatherTemp.humidity}%</h1>
+</section>
+
+<section className='CardPressure'>
+<p>Air pressure</p>
+<h1>{WeatherTemp.pressure}mb</h1>
+
 </section>
 
 
+
+
+<section className='CardTempMax'>
+
+<p>Temperature max</p>
+<h1>{WeatherTemp.temp_max}ºC</h1>
+
+</section>
+
+<section className='CardTempMin'>
+
+
+<p>Temperature Min</p>
+
+<h1>{WeatherTemp.temp_min}ºC</h1>
+
+</section>
 
 
         </div>

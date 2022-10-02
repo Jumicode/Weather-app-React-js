@@ -1,23 +1,21 @@
 *{
     margin: 0;
+    
 }
 
 .Container{
     display: flex;
     background: rgb(26, 29, 39);
-    max-width: 100%;
- max-height: 100%;
+    
+
     
    
 .MainCard{
 
-width: 25%;
+width: 50rem;
 background-color: rgb(37, 42, 59);
-//background-image: url('../images/weather-images/Cloud-background.png');
-background-position-x: right;
-background-repeat: repeat-x;
-//opacity: 0.1;
-padding: 10px;
+
+padding: 15px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -49,16 +47,104 @@ h5{
 }
 
 img{
-    margin-top: 40%;
-    height: 100px;
- width: 100px;
+    margin-top: 60%;
+    height: 55px;
+ width: 55px;
 
 }
 
 
 
+
+
+}
+
+.CardHumidity{
+
+color: #fff;
+margin: auto;
+background: rgb(37, 42, 59);
+padding: 40px;
+width: 20rem;
+position: relative;
+left: 10rem;
+bottom: 5rem;
+
+text-align: center;
+
+h1{
+    font-size: 50px;
+   
+}
+}
+
+}
+
+.CardPressure{
+color: #fff;
+text-align: center;
+margin: auto;
+background: rgb(37, 42, 59);
+padding: 40px;
+width: 15rem;
+position: relative;
+left: 14rem;
+bottom: 5rem;
+
+
+
+h1{
+    font-size: 30px;
+   
+}
+
+
+}
+
+.CardTempMax{
+color: #fff;
+text-align: center;
+margin: auto;
+background: rgb(37, 42, 59);
+padding: 40px;
+width: 20rem;
+position: relative;
+top: 10rem;
+right: 14rem;
+
+
+h1{
+    font-size: 30px;
+   
 }
 
 
 
+
+
 }
+
+
+.CardTempMin{
+
+    color: #fff;
+text-align: center;
+margin: auto;
+background: rgb(37, 42, 59);
+padding: 40px;
+position: relative;
+top: 10rem;
+right: 10rem;
+width: 20rem;
+
+
+
+h1{
+    font-size: 30px;
+   
+}
+
+
+}
+
+

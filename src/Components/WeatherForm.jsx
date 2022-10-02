@@ -20,7 +20,8 @@ const toggle = () => setIsOpen(!IsOpen);
       
   
    <form  onSubmit={getWeather} >
-      <input  style={{width: IsOpen ? "200px"  : '0px',display: IsOpen ? 'block':'none'}} type='text' name='name' placeholder='city name'   ></input> 
+      <input  style={{width: IsOpen ? "200px"  : '0px',display: IsOpen ? 'block':'none'}} type='text' name='name' placeholder='city name' ></input>
+      
       <input  style={{display: IsOpen ? 'block' :'none'}}  type='submit' value='Search'></input>
     </form>
 
