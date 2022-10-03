@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector } from 'react-redux';
-import Styles from '../Styles/WeatherMain.scss'
+import  '../Styles/WeatherMain.scss'
 import WeatherSearch from './WeatherSearch';
 
 
@@ -22,9 +22,13 @@ const {country,weather,list,WeatherTemp } = useSelector((state) => state.weather
 
 <WeatherSearch></WeatherSearch>
 
+{
+    weather ==  false ? (
+        <p>No hay datos</p>
+    ) :
+    (
 
-
-<section className='MainCard'>
+        <section className='MainCard'>
 
 
 <img src={`http://openweathermap.org/img/w/${list.icon}.png`}></img>
@@ -39,6 +43,11 @@ const {country,weather,list,WeatherTemp } = useSelector((state) => state.weather
 
 
 </section>
+        
+    )
+}
+
+
 
 <section className='CardHumidity'>
 <p>Humidity</p>

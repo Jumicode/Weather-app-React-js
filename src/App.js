@@ -1,6 +1,5 @@
 import  React from "react";
 import WeatherMain from "./Components/WeatherMain";
-import WeatherSearch from "./Components/WeatherSearch";
 
 
 

@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import styles from '../Styles/WeatherForm.scss'
+import  '../Styles/WeatherForm.scss'
 
 
 const WeatherForm = ({getWeather}) => {
@@ -20,9 +20,10 @@ const toggle = () => setIsOpen(!IsOpen);
       
   
    <form  onSubmit={getWeather} >
-      <input  style={{width: IsOpen ? "200px"  : '0px',display: IsOpen ? 'block':'none'}} type='text' name='name' placeholder='city name' ></input>
+      <input className='inputText' style={{width: IsOpen ? "150px"  : '0px',display: IsOpen ? 'block':'none'}} type='text' name='name' placeholder='city name' ></input>
       
-      <input  style={{display: IsOpen ? 'block' :'none'}}  type='submit' value='Search'></input>
+      <input className='inputSubmit' style={{display: IsOpen ? 'block' :'none'}}  type='submit' value='Search'></input>
+      
     </form>
 
     </div>

@@ -42,6 +42,7 @@ alert('Por favor ingrese un nombre valido')
         <div>
        
 <WeatherForm getWeather={getWeather}></WeatherForm>
+
         </div>
     );
 }

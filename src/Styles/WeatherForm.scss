@@ -4,11 +4,41 @@
    display: flex;
    justify-content: flex-start;
    background: rgb(26, 29, 39);
+   
+   .inputText{
+      border-color: #fff;
+      background:rgb(18, 22, 34); 
+      margin-top: 20px;
+      margin-left: 20px;
+      height: 2em;
+      color: #fff;
+   }
+
+   
+
+   .inputSubmit{
+      background: blue;
+      color: #fff;
+      padding: 9px;
+      position: relative;
+      left: 12rem;
+      bottom: 2.2rem;
+   }
+
+   i{
+    
+    padding-right: 15px;
+    padding-left: 12px;
+    
+      background: rgb(68, 68, 68);
+     font-size: 25px;
+   }
+ 
 
 }
 
 .SideBard{
-
+   transition-duration: 0.5s;
    background: #000;
    color: #fff;
    height: 100vh;
