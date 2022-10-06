@@ -2,14 +2,15 @@ import  React from "react";
 import WeatherMain from "./Components/WeatherMain";
 
 
-
 function App() {
 
 
+
+
+  
   return (
     <div >
-
-<WeatherMain></WeatherMain>
+<WeatherMain ></WeatherMain>
 
 
   

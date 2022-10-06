@@ -1,6 +1,7 @@
 import React from 'react';
 import {useSelector } from 'react-redux';
 import  '../Styles/WeatherMain.scss'
+
 import WeatherSearch from './WeatherSearch';
 
 
@@ -20,13 +21,9 @@ const {country,weather,list,WeatherTemp } = useSelector((state) => state.weather
     
         <div className='Container'>
 
-<WeatherSearch></WeatherSearch>
+<WeatherSearch ></WeatherSearch>
 
-{
-    weather ==  false ? (
-        <p>No hay datos</p>
-    ) :
-    (
+
 
         <section className='MainCard'>
 
@@ -43,9 +40,8 @@ const {country,weather,list,WeatherTemp } = useSelector((state) => state.weather
 
 
 </section>
-        
-    )
-}
+
+<div className='CardContainer'>
 
 
 
@@ -78,6 +74,12 @@ const {country,weather,list,WeatherTemp } = useSelector((state) => state.weather
 <h1>{WeatherTemp.temp_min}ºC</h1>
 
 </section>
+
+</div>
+
+
+
+
 
 
         </div>

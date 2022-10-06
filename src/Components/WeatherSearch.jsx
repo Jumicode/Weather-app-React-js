@@ -17,6 +17,7 @@ const {name} =  e.target.elements;
 
  const res = `https://api.openweathermap.org/data/2.5/weather?q=${nameCity}&appid=0d5235392f278c7b5df0b3aac8760431&units=metric`;
  axios.get(res)
+ 
  .then((res) => {
         
     
