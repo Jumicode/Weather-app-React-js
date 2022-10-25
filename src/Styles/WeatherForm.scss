@@ -3,7 +3,7 @@
 .ContainerForm{
    display: flex;
    justify-content: flex-start;
-   background: rgb(26, 29, 39);
+ 
    height: 100%;
    
    .inputText{
@@ -40,7 +40,8 @@
 
 .SideBard{
    transition-duration: 0.5s;
-   background-color: rgb(37, 42, 59);
+
+   background-color: rgb(29, 33, 46);
    color: #fff;
    height: 100vh;
    
@@ -52,7 +53,7 @@
   
    .SideBard{
       margin: 0;
-      height: 80%;
+      height: 39%;
       border: none;
       
    }

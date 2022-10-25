@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useDispatch} from 'react-redux';
-import { setCountry, setList, setWeather, setWeatherTemp } from '../features/wheater/WeatherSlice';
+import { setCity, setForecast, setMain, setWeather,  setWind } from '../features/wheater/WeatherSlice';
 
 import WeatherForm from './WeatherForm';
 
@@ -15,19 +15,25 @@ const {name} =  e.target.elements;
 
   const nameCity = name.value;
 
- const res = `https://api.openweathermap.org/data/2.5/weather?q=${nameCity}&appid=0d5235392f278c7b5df0b3aac8760431&units=metric`;
+ const res = `https://api.openweathermap.org/data/2.5/forecast?q=${nameCity}&appid=bf198ed79d99f2837e93d584c7884149&units=metric&cnt=5`;
+ 
  axios.get(res)
+
+ 
  
  .then((res) => {
         
     
-  
+
 console.log(res.data)
- 
-dispatch(setWeather(res.data));
-dispatch(setList(res.data.weather[0]));
-dispatch(setWeatherTemp(res.data.main));
-dispatch(setCountry(res.data.sys));
+
+dispatch(setCity(res.data.city));
+dispatch(setWeather(res.data.list[0].weather[0]));
+dispatch(setMain(res.data.list[0].main));
+dispatch(setWind(res.data.list[0].wind));
+
+dispatch(setForecast(res.data.list));
+
    
 })
 
@@ -36,6 +42,8 @@ alert('Por favor ingrese un nombre valido')
 })
   e.preventDefault();
 }
+
+
 
 
 
@@ -49,3 +57,4 @@ alert('Por favor ingrese un nombre valido')
 }
 
 export default WeatherSearch;
+

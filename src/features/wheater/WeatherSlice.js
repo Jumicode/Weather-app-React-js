@@ -5,32 +5,38 @@ export const weatherSlice = createSlice({
     name:'weather',
     initialState:{
        
-       weather:[],
-       list:[],
-       WeatherTemp:[],
-       country:[],
+       city:[],
+       wind:[],
+       Weather:[],
+       Main:[],
+       forecast:[],
     },
+  
     reducers:{
 
-setWeather:(state,actions) => {
-  state.weather = actions.payload;
+setCity:(state,actions) => {
+  state.city = actions.payload;
 },
-setList:(state,actions) => {
-  state.list = actions.payload;
+setWind:(state,actions) => {
+  state.wind = actions.payload;
  
 },
-setWeatherTemp:(state,actions) =>{
-  state.WeatherTemp = actions.payload;
+setWeather:(state,actions) =>{
+  state.Weather = actions.payload;
 },
-setCountry:(state,actions) =>{
-  state.country = actions.payload;
+setMain:(state,actions) =>{
+  state.Main = actions.payload;
+},
+
+setForecast:(state,actions) =>{
+state.forecast = actions.payload;
 }
   }
 })
 
 
 
-export  const {setCountry,setWeatherTemp,setList,setWeather} = weatherSlice.actions;
+export  const {setMain,setWeather,setWind,setCity,setForecast} = weatherSlice.actions;
 
 export default weatherSlice.reducer
 
