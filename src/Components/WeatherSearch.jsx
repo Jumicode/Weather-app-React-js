@@ -38,7 +38,8 @@ dispatch(setForecast(res.data.list));
 })
 
 .catch((err) =>{
-alert('Por favor ingrese un nombre valido')
+alert(`Invalid city name, check the name or your internet connection`);
+console.log(err);
 })
   e.preventDefault();
 }
@@ -51,6 +52,7 @@ alert('Por favor ingrese un nombre valido')
         <div>
        
 <WeatherForm getWeather={getWeather}></WeatherForm>
+
 
         </div>
     );
