@@ -6,7 +6,7 @@ import WeatherSearch from './WeatherSearch';
 
 
 
-//Componente principal de la APP 
+
 const WeatherMain = () => {
 
 
@@ -20,7 +20,7 @@ const {Main,city,wind,Weather,forecast} = useSelector((state) => state.weather)
 
 
         <div className='Container'>
-
+{/* eslint-disable */}
 {Weather == false ?(
         <><WeatherSearch></WeatherSearch><h1 className='message'>Please search city</h1></>
 ):(
