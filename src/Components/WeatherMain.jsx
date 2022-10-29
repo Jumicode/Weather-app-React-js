@@ -21,7 +21,7 @@ const {Main,city,wind,Weather,forecast} = useSelector((state) => state.weather)
 
         <div className='Container'>
 
-{Weather === false ?(
+{Weather == false ?(
         <><WeatherSearch></WeatherSearch><h1 className='message'>Please search city</h1></>
 ):(
   
